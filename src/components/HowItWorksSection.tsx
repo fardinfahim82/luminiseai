@@ -27,38 +27,38 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-24 px-6 bg-secondary/30">
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold">
+        <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold px-2">
             <span className="gradient-text">How It Works</span> — 3-Step Plan
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Time to first value: within 7 days
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {steps.map((step, index) => (
             <Card 
               key={index} 
-              className="p-8 space-y-6 bg-card hover:bg-card/80 transition-all duration-300 hover:shadow-lg border-border/50 relative overflow-hidden group"
+              className="p-6 md:p-8 space-y-4 md:space-y-6 bg-card hover:bg-card/80 transition-all duration-300 hover:shadow-lg border-border/50 relative overflow-hidden group"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative">
                 {/* Step Number */}
-                <div className="absolute -top-4 -right-4 text-6xl font-bold text-muted/10">
+                <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 text-5xl md:text-6xl font-bold text-muted/10">
                   {index + 1}
                 </div>
 
                 {/* Icon */}
-                <div className={`w-16 h-16 ${step.bgColor} rounded-xl flex items-center justify-center mb-4`}>
-                  <step.icon className={`w-8 h-8 ${step.color}`} />
+                <div className={`w-12 h-12 md:w-16 md:h-16 ${step.bgColor} rounded-xl flex items-center justify-center mb-3 md:mb-4`}>
+                  <step.icon className={`w-6 h-6 md:w-8 md:h-8 ${step.color}`} />
                 </div>
 
                 {/* Content */}
-                <h3 className="font-heading text-2xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                <h3 className="font-heading text-xl md:text-2xl font-semibold mb-2 md:mb-3">{step.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
             </Card>
           ))}
