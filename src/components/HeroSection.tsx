@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Flame, PlayCircle } from "lucide-react";
+import { Flame } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20 pt-32">
       {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
@@ -27,15 +27,11 @@ const HeroSection = () => {
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            {/* CTA Button */}
+            <div className="flex justify-center lg:justify-start">
               <Button variant="hero" size="xl" className="group">
                 <Flame className="w-5 h-5 group-hover:animate-glow-pulse" />
-                Get Your Free AI Demo
-              </Button>
-              <Button variant="outline" size="xl">
-                <PlayCircle className="w-5 h-5" />
-                Watch How It Works
+                Book Your Free AI Demo
               </Button>
             </div>
 
