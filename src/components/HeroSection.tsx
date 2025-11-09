@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Flame, PlayCircle } from "lucide-react";
-import heroImage from "@/assets/hero-ai-receptionist.jpg";
 
 const HeroSection = () => {
   return (
@@ -48,11 +47,18 @@ const HeroSection = () => {
 
           {/* Right Visual */}
           <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="relative rounded-2xl overflow-hidden glow-primary">
-              <img 
-                src={heroImage} 
-                alt="AI Receptionist System Interface" 
-                className="w-full h-auto rounded-2xl"
+            <div className="relative rounded-2xl overflow-hidden glow-primary transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/30 group">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                style={{ aspectRatio: "16/9" }}
+                src="https://www.youtube.com/embed/4YP_K_yA5h8?si=k8U74cEGsH3b8240" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                className="rounded-2xl"
               />
             </div>
             <p className="text-center mt-4 text-sm text-muted-foreground">
