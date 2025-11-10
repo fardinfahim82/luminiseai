@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Flame } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
@@ -8,12 +8,11 @@ const Header = () => {
         <div className="flex items-center justify-between gap-2">
           {/* Logo */}
           <div className="flex items-center gap-1.5 md:gap-2">
-            <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
-              <Flame className="w-4 h-4 md:w-5 md:h-5 text-primary-foreground" />
-            </div>
-            <span className="font-heading text-base md:text-xl font-bold gradient-text whitespace-nowrap">
-              Luminise
-            </span>
+            <img 
+              src={logo} 
+              alt="Luminise AI Logo" 
+              className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0"
+            />
           </div>
 
           {/* Center Text */}

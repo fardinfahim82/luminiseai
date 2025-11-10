@@ -1,4 +1,4 @@
-import { Flame } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -11,12 +11,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-3 md:space-y-4 col-span-2 md:col-span-1">
             <div className="flex items-center gap-1.5 md:gap-2">
-              <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <Flame className="w-4 h-4 md:w-5 md:h-5 text-primary-foreground" />
-              </div>
-              <span className="font-heading text-lg md:text-xl font-bold gradient-text">
-                Luminise
-              </span>
+              <img 
+                src={logo} 
+                alt="Luminise AI Logo" 
+                className="w-8 h-8 md:w-10 md:h-10"
+              />
             </div>
             <p className="text-xs md:text-sm text-muted-foreground">
               AI Automation Agency helping dental clinics scale with intelligent automation.
