@@ -3,7 +3,7 @@ import { Flame } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-6 py-20 pt-24 md:pt-32">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 md:px-6 pt-20 md:pt-24">
       {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-5 md:left-10 w-64 h-64 md:w-96 md:h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
@@ -11,7 +11,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 mx-auto max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-6 md:space-y-8 animate-fade-in">
             <div className="space-y-3 md:space-y-4">
