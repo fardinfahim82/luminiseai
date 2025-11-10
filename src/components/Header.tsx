@@ -29,7 +29,7 @@ const Header = () => {
             className="md:h-10 md:px-6 text-xs md:text-sm whitespace-nowrap"
             asChild
           >
-            <a href="https://calendly.com/accelarator_call/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendar.app.google/RDworA7VfvdSWXEz5" target="_blank" rel="noopener noreferrer">
               Book Demo
             </a>
           </Button>

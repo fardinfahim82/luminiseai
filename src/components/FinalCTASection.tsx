@@ -30,7 +30,7 @@ const FinalCTASection = () => {
               className="group w-full sm:w-auto"
               asChild
             >
-              <a href="https://calendly.com/accelarator_call/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendar.app.google/RDworA7VfvdSWXEz5" target="_blank" rel="noopener noreferrer">
                 <Flame className="w-4 h-4 md:w-5 md:h-5 group-hover:animate-glow-pulse" />
                 Book Your Free AI Demo
               </a>
