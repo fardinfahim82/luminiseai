@@ -29,9 +29,16 @@ const HeroSection = () => {
 
             {/* CTA Button */}
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="group w-full sm:w-auto md:text-base">
-                <Flame className="w-4 h-4 md:w-5 md:h-5 group-hover:animate-glow-pulse" />
-                Book Your Free AI Demo
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="group w-full sm:w-auto md:text-base"
+                asChild
+              >
+                <a href="https://calendly.com/accelarator_call/30min" target="_blank" rel="noopener noreferrer">
+                  <Flame className="w-4 h-4 md:w-5 md:h-5 group-hover:animate-glow-pulse" />
+                  Book Your Free AI Demo
+                </a>
               </Button>
             </div>
 

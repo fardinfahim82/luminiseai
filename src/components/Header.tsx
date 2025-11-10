@@ -24,8 +24,15 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <Button variant="hero" size="sm" className="md:h-10 md:px-6 text-xs md:text-sm whitespace-nowrap">
-            Book Demo
+          <Button 
+            variant="hero" 
+            size="sm" 
+            className="md:h-10 md:px-6 text-xs md:text-sm whitespace-nowrap"
+            asChild
+          >
+            <a href="https://calendly.com/accelarator_call/30min" target="_blank" rel="noopener noreferrer">
+              Book Demo
+            </a>
           </Button>
         </div>
       </div>

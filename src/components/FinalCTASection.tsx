@@ -24,9 +24,16 @@ const FinalCTASection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-2 md:pt-4">
-            <Button variant="hero" size="lg" className="group w-full sm:w-auto">
-              <Flame className="w-4 h-4 md:w-5 md:h-5 group-hover:animate-glow-pulse" />
-              Book Your Free AI Demo
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group w-full sm:w-auto"
+              asChild
+            >
+              <a href="https://calendly.com/accelarator_call/30min" target="_blank" rel="noopener noreferrer">
+                <Flame className="w-4 h-4 md:w-5 md:h-5 group-hover:animate-glow-pulse" />
+                Book Your Free AI Demo
+              </a>
             </Button>
           </div>
 
