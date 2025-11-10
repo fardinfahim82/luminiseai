@@ -54,6 +54,7 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
+        'gradient-elite': 'var(--gradient-elite)',
         'gradient-dark': 'var(--gradient-dark)',
       },
       borderRadius: {
