@@ -11,7 +11,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Luminise AI Logo" 
-              className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0"
+              className="h-auto flex-shrink-0"
             />
           </div>
 
