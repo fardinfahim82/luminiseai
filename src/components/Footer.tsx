@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 const Footer = () => {
   return (
@@ -13,8 +13,8 @@ const Footer = () => {
             <div className="flex items-center gap-1.5 md:gap-2">
               <img 
                 src={logo} 
-                alt="Luminise AI Logo" 
-                className="w-8 h-8 md:w-10 md:h-10"
+                alt="AI Receptionist Logo" 
+                className="h-10 md:h-12 w-auto"
               />
             </div>
             <p className="text-xs md:text-sm text-muted-foreground">
