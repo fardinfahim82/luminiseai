@@ -51,6 +51,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         heading: ['Poppins', 'system-ui', 'sans-serif'],
+        typewriter: ['Courier Prime', 'Courier New', 'monospace'],
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
