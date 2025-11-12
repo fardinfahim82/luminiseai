@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="Luminise AI Logo" 
-                className="h-auto"
+                className="w-10 h-10 md:w-12 md:h-12"
               />
             </div>
             <p className="text-xs md:text-sm text-muted-foreground">
