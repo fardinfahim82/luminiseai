@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="Luminise AI Logo" 
-                className="w-10 h-10 md:w-12 md:h-12"
+                className="w-8 h-8 md:w-10 md:h-10"
               />
             </div>
             <p className="text-xs md:text-sm text-muted-foreground">
