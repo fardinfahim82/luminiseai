@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PainPromiseSection from "@/components/PainPromiseSection";
+import ROICalculatorSection from "@/components/ROICalculatorSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import ResultsSection from "@/components/ResultsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <PainPromiseSection />
+      <ROICalculatorSection />
       <HowItWorksSection />
       <ResultsSection />
       <TestimonialsSection />
