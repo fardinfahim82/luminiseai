@@ -208,19 +208,20 @@ const ROICalculatorSection = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center space-y-4 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20">
+          <div className="text-center space-y-4 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
             <h3 className="text-2xl md:text-3xl font-bold">
               Ready to Save {formatCurrency(animatedSavings)}/year?
             </h3>
             <p className="text-muted-foreground">
-              Start your 14-day free trial and see the results for yourself
+              Start your AI setup today and watch every call turn into revenue — guaranteed
             </p>
             <Button 
+              variant="cta"
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg"
+              className="px-8 py-6 text-lg"
             >
               <Calculator className="w-5 h-5 mr-2" />
-              Build My FREE AI Agent!
+              Build My AI Receptionist Now
             </Button>
           </div>
         </Card>
