@@ -24,7 +24,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <Button 
-            variant="hero" 
+            variant="cta" 
             size="sm" 
             className="md:h-10 md:px-6 text-xs md:text-sm whitespace-nowrap"
             asChild

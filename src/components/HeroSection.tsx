@@ -30,7 +30,7 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="flex justify-center">
               <Button 
-                variant="hero" 
+                variant="cta" 
                 size="lg" 
                 className="group w-full sm:w-auto md:text-base"
                 asChild

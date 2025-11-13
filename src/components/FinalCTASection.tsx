@@ -25,7 +25,7 @@ const FinalCTASection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-2 md:pt-4">
             <Button 
-              variant="hero" 
+              variant="cta" 
               size="lg" 
               className="group w-full sm:w-auto"
               asChild
