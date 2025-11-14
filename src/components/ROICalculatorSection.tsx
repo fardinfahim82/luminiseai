@@ -99,35 +99,35 @@ const ROICalculatorSection = () => {
           {/* Input Fields Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Monthly Leads */}
-            <div className="space-y-3">
+            <div className="space-y-3 group">
               <label className="text-sm text-muted-foreground">Monthly Leads</label>
               <Input
                 type="number"
                 value={monthlyLeads}
                 onChange={(e) => setMonthlyLeads(Math.max(0, parseInt(e.target.value) || 0))}
-                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50"
+                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,85,247,0.3)] hover:scale-[1.02]"
               />
             </div>
 
             {/* Current Human Setters */}
-            <div className="space-y-3">
+            <div className="space-y-3 group">
               <label className="text-sm text-muted-foreground">Current Human Setters</label>
               <Input
                 type="number"
                 value={currentReceptionists}
                 onChange={(e) => setCurrentReceptionists(Math.max(1, parseInt(e.target.value) || 1))}
-                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50"
+                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,85,247,0.3)] hover:scale-[1.02]"
               />
             </div>
 
             {/* Average Deal Value */}
-            <div className="space-y-3">
+            <div className="space-y-3 group">
               <label className="text-sm text-muted-foreground">Average Deal Value</label>
               <Input
                 type="number"
                 value={avgAppointmentValue}
                 onChange={(e) => setAvgAppointmentValue(Math.max(0, parseInt(e.target.value) || 0))}
-                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50"
+                className="h-14 text-2xl font-semibold text-center bg-background/50 border-border/50 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(138,85,247,0.3)] hover:scale-[1.02]"
               />
             </div>
           </div>
@@ -135,7 +135,7 @@ const ROICalculatorSection = () => {
           {/* Results Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Annual Savings */}
-            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2">
+            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2 transition-all duration-300 hover:border-green-400/40 hover:shadow-[0_0_25px_rgba(74,222,128,0.25)] hover:scale-[1.03] hover:bg-background/40">
               <p className="text-sm text-muted-foreground">Annual Savings</p>
               <div className="text-3xl md:text-4xl font-bold text-green-400 tabular-nums">
                 {formatCurrency(animatedSavings)}
@@ -144,7 +144,7 @@ const ROICalculatorSection = () => {
             </div>
 
             {/* Extra Appointments */}
-            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2">
+            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2 transition-all duration-300 hover:border-green-400/40 hover:shadow-[0_0_25px_rgba(74,222,128,0.25)] hover:scale-[1.03] hover:bg-background/40">
               <p className="text-sm text-muted-foreground">Extra Appointments/Month</p>
               <div className="text-3xl md:text-4xl font-bold text-green-400 tabular-nums">
                 +{animatedAppointments}
@@ -153,7 +153,7 @@ const ROICalculatorSection = () => {
             </div>
 
             {/* Additional Revenue */}
-            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2">
+            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-2 transition-all duration-300 hover:border-green-400/40 hover:shadow-[0_0_25px_rgba(74,222,128,0.25)] hover:scale-[1.03] hover:bg-background/40">
               <p className="text-sm text-muted-foreground">Additional Revenue/Month</p>
               <div className="text-3xl md:text-4xl font-bold text-green-400 tabular-nums">
                 {formatCurrency(animatedRevenue)}
@@ -165,7 +165,7 @@ const ROICalculatorSection = () => {
           {/* Comparison Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {/* Human Setters */}
-            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-4">
+            <div className="p-6 rounded-xl bg-background/30 border border-border/30 space-y-4 transition-all duration-300 hover:border-destructive/40 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] hover:scale-[1.02] hover:bg-background/40">
               <h3 className="font-semibold text-lg">Human Setters</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
@@ -186,7 +186,7 @@ const ROICalculatorSection = () => {
             </div>
 
             {/* Luminise AI */}
-            <div className="p-6 rounded-xl bg-background/30 border border-primary/30 space-y-4">
+            <div className="p-6 rounded-xl bg-background/30 border border-primary/30 space-y-4 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_25px_rgba(138,85,247,0.3)] hover:scale-[1.02] hover:bg-background/40">
               <h3 className="font-semibold text-lg">Luminise AI</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
